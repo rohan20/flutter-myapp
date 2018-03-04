@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: new Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: new Column(
+        child: new Row(
           // Column is also layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -87,19 +87,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(
               'You have tapped the button this many times:',
             ),
             new Text(
               '$_counter',
-              style: Theme.of(context).textTheme.body2,
+              style: Theme.of(context).textTheme.display2,
+            ),
+            new Text(
+              "Dummy text"
             ),
           ],
         ),
       ),
       floatingActionButton: new FloatingActionButton(
+        backgroundColor: Colors.blue,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: new Icon(Icons.bluetooth),
