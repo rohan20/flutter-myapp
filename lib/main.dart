@@ -90,14 +90,14 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(
-              'You have tapped the button this many times:',
+              'You have tapped the button',
             ),
             new Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display2,
+              ' $_counter ',
+              style: Theme.of(context).textTheme.display1,
             ),
             new Text(
-              "Dummy text"
+              ' times',
             ),
           ],
         ),
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.blue,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: new Icon(Icons.bluetooth),
+        child: new Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
